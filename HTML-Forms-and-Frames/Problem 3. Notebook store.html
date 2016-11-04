@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problem 3. Notebook store</title>
+    <style>
+        table,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        .right_table td {
+            border-color: transparent;
+            text-align: center;
+        }
+
+        .right {
+text-align: right;
+        }
+
+        .left {
+text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2"><a href="#">Apple</a> <a href="#">Toshiba</a> <a href="#">Lenovo</a> <a href="#">Dell</a> <a href="#">ASUS</a>
+                    <a href="#">Acer</a> <a href="#">HP</a></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>
+                    <table class="right_table">
+                        <tr><td class="left">Min Price:</td> <td class="right">500 USD</td></tr>
+                        <tr>
+                            <td colspan="2"><input type="range" name="points" min="0" max="10"></td>
+                        </tr>
+                        <tr><td class="left">Max Price:</td> <td class="right">1500 USD</td></tr>
+                        <tr>
+                            <td colspan="2"><input type="range" name="points" min="0" max="10"></td>
+                        </tr>
+                        <tr><td class="left">Min RAM:</td> <td class="right">4 GB</td></tr>
+                        <tr>
+                            <td colspan="2"><input type="range" name="points" min="0" max="10"></td>
+                        </tr>
+                        <tr><td class="left">Max RAM:</td> <td class="right">16 GB</td></tr>
+                        <tr>
+                            <td colspan="2"><input type="range" name="points" min="0" max="10"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Problem 1. Registration form</title>
+	<style>
+		table,
+		td {
+			border: 1px solid gray;
+			border-collapse: collapse;
+			padding: 5px;
+			font-family: "Arial";
+		}
+		
+		input[type=text],
+		textarea,
+		select {
+			border-top: 2px solid gray;
+			border-left: 2px solid gray;
+		}
+		
+		td.right {
+			text-align: right;
+			font-weight: bold;
+			width: 120px;
+		}
+		
+		#submit_reset {
+			text-align: center;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<table>
+			<tr>
+				<td class="right">Last Name</td>
+				<td colspan="3" class="left"><input type="text" name="Last Name" value="Nakov" size="35"></td>
+			</tr>
+			<tr>
+				<td class="right">First Name</td>
+				<td colspan="3" class="left"><input type="text" name="First Name" value="Svetlin" size="35"></td>
+			</tr>
+			<tr>
+				<td class="right">Address</td>
+				<td colspan="3" class="left"><textarea name="address" rows="3" cols="35">17 Hristo Botev Str.&#13;&#10;floor 3, apt. 12</textarea></td>
+			</tr>
+			<tr>
+				<td class="right">City</td>
+				<td><input type="text" name="city" value="Kaspichan" size="25"></td>
+				<td><b>State</b></td>
+				<td><input type="text" name="state" size="2"></td>
+			</tr>
+			<tr>
+				<td class="right">Zip/Postal Code</td>
+				<td colspan="3" class="left"><input type="text" name="zip" size="6" value="9325" maxlength="5"></td>
+			</tr>
+			<tr>
+				<td class="right">Country</td>
+				<td colspan="3" class="left"><select><option>Bulgaria</option><option>asdafsdfasdfasdfasdfasd</option></select></td>
+			</tr>
+			<tr>
+				<td class="right">Phone (country code, area code, number)</td>
+				<td colspan="3" class="left">(+<input type="text" name="country_code" value="359" size="1" maxlength="3">) <input type="text" name="area_code" value="88"
+						size="1" maxlength="2"> - <input type="text" name="number" value="8334343" size="10"></td>
+			</tr>
+			<tr>
+				<td class="right">E-mail</td>
+				<td colspan="3" class="left"><input type="text" name="e-mail" value="nakov@kaspichan.org"></td>
+			</tr>
+			<tr>
+				<td class="right">Birth date</td>
+				<td colspan="3" class="left">Month <input type="text" name="month" value="06" size="1" maxlength="2"> Day <input type="text" name="day" value="14"
+						size="1" maxlength="2"> Year (4 digit) <input type="text" name="year" value="1980" maxlength="4" size="2"></td>
+			</tr>
+			<tr>
+				<td class="right">Gender</td>
+				<td colspan="3" class="left"><select><option value="gender">Male</option><option value="female">Female</option><option value="other">Other</option></select></td>
+			</tr>
+			<tr>
+				<td class="right">Starting date</td>
+				<td colspan="3" class="left"><input type="radio" name="season" value="spring" checked>Spring 2006<input type="radio" name="season" value="summer">Summer
+					2006
+				</td>
+			</tr>
+			<tr>
+				<td class="right">Comments/Questions</td>
+				<td colspan="3" class="left"><textarea name="comments" rows="4" cols="35">Please send me more information&#13;&#10;about lodging.</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4" id="submit_reset"><input type="submit" value="Submit"> <input type="reset" value="Clear This Form"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

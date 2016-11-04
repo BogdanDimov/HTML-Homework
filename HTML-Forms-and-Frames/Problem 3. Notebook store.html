@@ -4,15 +4,40 @@
 <head>
     <title>Problem 3. Notebook store</title>
     <style>
-        table,
         td {
-            border: 2px solid black;
+            border: 2px solid dimgray;
             border-collapse: collapse;
+            text-align: center;
         }
         
-        .right_table td {
+        #big {
+            font-family: Arial;
+            border: 2px solid dimgray;
+            border-collapse: separate;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        #header,
+        a {
+            font-weight: bold;
+            color: dodgerblue;
+            padding: 5px;
+            border-color: transparent;
+        }
+        
+        .right_table td,
+        #right_table {
+            font-family: Georgia;
+            font-size: large;
             border-color: transparent;
             text-align: center;
+        }
+        
+        .macbook_table td {
+            font-family: Georgia;
+            font-size: large;
+            border-color: transparent;
         }
         
         .right {
@@ -22,31 +47,64 @@
         .left {
             text-align: left;
         }
+        
+        img {
+            width: auto;
+            max-height: 20%;
+        }
     </style>
 </head>
 
 <body>
-    <table>
+    <table id="big">
         <thead>
             <tr>
-                <td colspan="2"><a href="#">Apple</a> <a href="#">Toshiba</a> <a href="#">Lenovo</a> <a href="#">Dell</a> <a href="#">ASUS</a>
-                    <a href="#">Acer</a> <a href="#">HP</a></td>
+                <td colspan="2" id="header">
+                    <font size="5"><a href="#">Apple</a> <a href="#">Toshiba</a> <a href="#">Lenovo</a> <a href="#">Dell</a> <a href="#">ASUS</a>
+                        <a href="#">Acer</a> <a href="#">HP</a></font>
+                </td>
             </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>
-                    <table>
+                    <table class="macbook_table">
                         <tr>
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                         </tr>
@@ -54,11 +112,37 @@
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                         </tr>
@@ -66,18 +150,44 @@
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                             <td>
                                 <fieldset>
                                     <legend>Apple MacBook Air</legend>
+                                    <table>
+                                        <tr>
+                                            <td rowspan="2"><img src="MacBookAir.jpg" alt="Picture of MacBook Air"></td>
+                                            <td class="left">64 GB SSD</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">2 GB DDR</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1300 USD</td>
+                                            <td class="left">Intel Core i5</td>
+                                        </tr>
+                                    </table>
                                 </fieldset>
                             </td>
                         </tr>
                     </table>
                 </td>
 
-                <td>
+                <td id="right_table">
                     <table class="right_table">
                         <tr>
                             <td class="left">Min Price:</td>

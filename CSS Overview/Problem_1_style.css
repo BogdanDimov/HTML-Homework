@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+table {
+    background-color: #595959;
+    font-family: Arial;
+    font-size: 12px;
+    
+    color: #FFF2B2;
+    width: 300px;
+}
+
+td {
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+#red {
+    color: #DC040C;
+    font-weight: bold;
+    padding: 0px;
+}
+
+#orange {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.circle::before {
+    content: '';    
+    display: inline-block;
+    background: #71B47A;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+thead {
+    font-size: 16px;
+}
+
+tbody {
+    padding: 10px;
+}
+
+.grey
+{
+    color: lightgrey;
+}
+
+.left_col {
+    font-style: italic;
+    color: white;    
+    width: 100px;
+    vertical-align: top;
+}

@@ -5,8 +5,7 @@
 table {
     background-color: #595959;
     font-family: Arial;
-    font-size: 12px;
-    
+    font-size: 12px;    
     color: #FFF2B2;
     width: 300px;
 }
@@ -44,8 +43,7 @@ tbody {
     padding: 10px;
 }
 
-.grey
-{
+.grey {
     color: lightgrey;
 }
 

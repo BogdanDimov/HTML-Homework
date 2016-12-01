@@ -138,7 +138,7 @@ body header div#header-container div#reg-form-container button {
     margin-right: auto;
     width: 90px;
     font-weight: bold;
-    border: 1px solid #603382;
+    border: 1px solid rgba(255, 255, 255, 1);
     border-style: outset;
     border-radius: 10px;
     padding: 5px 8px;
